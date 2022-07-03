@@ -2,7 +2,11 @@
 2020-2학기 데이터베이스 설계 프로젝트 <br><br>
 
 MOVIES ERD를 기반으로 MOVIES 데이터베이스를 설계합니다.<br>
-이를 MySQL을 통해 구현한 후 Java를 이용하여 web application을 구현합니다.
+이를 MySQL을 통해 구현한 후 Java를 이용하여 web application을 구현합니다.<br>
+
+### Docker Images
+<li>tomcat server : https://hub.docker.com/repository/docker/mok06234/project_tomcat-server_image </li>
+<li>mysql : https://hub.docker.com/repository/docker/mok06234/project_mysql_image </li>
 
 ### EER Diagram
 <img width="482" alt="image" src="https://user-images.githubusercontent.com/63782957/177042139-db82e186-90ee-4cb7-9043-73f1e6b99808.png">
@@ -14,6 +18,3 @@ MOVIES ERD를 기반으로 MOVIES 데이터베이스를 설계합니다.<br>
 <img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=flat-square&logo=Apache Tomcat&logoColor=black"/></a>&nbsp;
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/></a>&nbsp;
 
-### Docker Images
-<li>tomcat server : https://hub.docker.com/repository/docker/mok06234/project_tomcat-server_image </li>
-<li>mysql : https://hub.docker.com/repository/docker/mok06234/project_mysql_image </li>
