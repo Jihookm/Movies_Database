@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>HTML연습</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+
+            }
+            header{
+                width:100%;
+                background-color:#005766;
+                height:200px;
+            }
+            header > div{
+                float: left;
+            }
+            header h1, header p {
+                color:white;
+                text-align:center;
+                margin:30px;
+            }
+            header img{
+                height:150px;
+                padding:20px;
+            }
+            nav{
+                clear:both; /*위에서 float 적용한걸 초기화*/
+                background-color:#3db7cc;
+                height:40px;
+
+            }
+            nav a{
+                width:100px;
+                height:40px;
+                padding:5px;
+                display:inline-block;
+                text-decoration:none;
+                text-align:center;
+            }
+            section {
+                margin:10px;
+                padding:10px;
+                width: 45%;
+                height: 200px;
+                float:left;
+                border:1px solid #3db7cc;
+                box-sizing: border-box;
+            }
+            h2{
+                margin:5px;
+                padding:10px;
+                background-color:#005766;
+                color:white; /*rgb(255,255,255)*/
+
+            }
+            section p, section ul, section ol{
+                padding-left:50px;
+            }
+            section a {
+                width:80%;
+                height: 15px;
+                padding: 5px;
+            }
+            footer {
+                clear:both;
+                background-color: #eaeaea;
+                color: #5d5d5d;
+                padding: 20px;
+                font-size: 12px;
+            }
+            .sc1 {
+                color:red;
+            }
+            #test {
+                color: black;
+
+            }
+        </style>
+        <script>
+            var hidden = false;
+            function hide(){
+                hidden = !hidden;
+                if(hidden){
+                    document.getElementById("demo").style.display="none";
+                    document.getElementById('fig').src="./img/캡처1.jpg";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <button id="demo" onclick="hide();">Display figure</button>
+            </div>
+            <div>
+                <img src="" alt="사진이 없습니다" id="fig">
+                
+            </div>
+            <h1>KIM JI HOO</h1>
+            <p>김지후</p>
+        </header>
+        <nav>
+            <a href="#s1">[개인정보]</a>&nbsp;&nbsp;
+            <a href="#s2">[이수과목]</a>&nbsp;&nbsp;
+            <a href="#s3">[수강과목]</a>&nbsp;&nbsp;
+            <a href="#s4">[자기소개]</a>&nbsp;&nbsp;
+        </nav>
+        <section id="s1">
+            <h2>개인정보</h2>
+            
+            <ul>
+                <span class="material-icons">phone</span>010-5204-7554<br>
+                <span class="material-icons">mail</span>mok06234@gmail.com<br>
+                <span class="material-icons">assignment</span>인천광역시 미추홀구 인하로 100
+
+            </ul>
+        </section>
+        <section class="sc1" id="s2">
+            <h2 class="c1" id="test">이수과목</h2>
+            <ol>
+                <li>객체지향프로그래밍</li>
+                <li>자료구조</li>
+                <li>프로그래밍실습</li>
+                <li>알고리즘설계</li>
+
+            </ol>
+        </section>
+        <section class="sc2" id="s3">
+            <h2 class="c2">수강과목</h2>
+            <ul>
+                <li><a href="https://www.inha.ac.kr/kr/968/subview.do?&enc=Zm5jdDF8QEB8JTJGZmFjdWx0eVNlYXJjaCUyRmtyJTJGbmFtZUxpc3QuZG8lM0ZrbmFtZSUzRCVFQyVCNSU5QyVFQyU5QiU5MCVFQyU5RCVCNSUyNmluaGFpZCUzRDExOTMzRDdDRjc1N0M0NzA2NjJGNEZFN0YwMUQ1QzA0RDE5RDg4QjI0MDI4N0U3MDdCOTI1Q0NFM0VEQTk5RjJGNUQxQjQ4NEJFM0Y2ODBGNDlBM0UwMkVBQzk3MENCMzQyNDgxQ0IzMEQ3NzNGRTM4MTdFMDJDRjNGNUM4MTAxJTI2">데이터베이스설계</a></li>
+                <li><a href="https://www.inha.ac.kr/kr/968/subview.do?&enc=Zm5jdDF8QEB8JTJGZmFjdWx0eVNlYXJjaCUyRmtyJTJGbmFtZUxpc3QuZG8lM0ZrbmFtZSUzRCVFQiVCMCU5NSVFQyU5RCVCOCVFQSVCNyU5QyUyNmluaGFpZCUzRDlDMzJENzgyNThCQTYzOTY4QUUyMDIxN0ZFRENEMzM1MTc5OUJEMzc4RTdBMzk2NzMwMjM0NkM1RjMwMTI5QkRGQURGMzY4M0U1QkNFMzBGQ0JEQjU2N0YyNTA0OTcwQzVDMTA3OTY0OUNFNjdFQjczNEE2QTBDMUI3NkU2RDlGJTI2">컴퓨터그래픽스설계</a></li>
+                <li><a href="https://www.inha.ac.kr/kr/968/subview.do?&enc=Zm5jdDF8QEB8JTJGZmFjdWx0eVNlYXJjaCUyRmtyJTJGbmFtZUxpc3QuZG8lM0ZrbmFtZSUzRCVFQSVCOSU4MCVFQSVCOCVCMCVFQyVCMCVCRCUyNmluaGFpZCUzRDdBRTQyRjVFMjY2M0Y4MTIyRUJGQjM3MzdCOTU2MzUwNjk4NTVFOEMyRDk0NEY0RkMwRThEMkFBQTExRkM4RkQxQTBFNkM3NTAxMTQ4REQ4NENGMkJCNDEyQTk5MjhCRTdCRThCMzNENTk5MkFFOTcyNEE2QTdGRjM3MDEzMTcxJTI2">오퍼레이팅시스템</a></li>
+                <li><a href="https://www.inha.ac.kr/kr/968/subview.do?&enc=Zm5jdDF8QEB8JTJGZmFjdWx0eVNlYXJjaCUyRmtyJTJGbmFtZUxpc3QuZG8lM0ZrbmFtZSUzRCVFQyU5QyVBMCVFQyU4MyU4MSVFQyVBMSVCMCUyNmluaGFpZCUzREJGOUNGMDIwMDZDMzcwRUZEMDlCM0I0NkJDMUQ4Q0M4Mzk5Q0ZBNEYxRjZENEFBOEVBNTRGMUE3RDQ5NEFFOTZGMkFCNEUzQkIwOEI5Qzg3MTkwNjM3MUE4QjU3Mzc1MTdEQUMwN0ExMEZDMTNDMzVERjcyOEUyMTEyOTIxRjM3JTI2">컴퓨터네트워크</a></li>
+                
+                <!--수강과목 교수님으로 3개 더 추가하기-->
+            </ul>
+        </section>
+        <section class="sc2" id="s4">
+            <h2 class="c2">자기소개</h2>
+            <p  id="p1">
+                <br>
+                <!--학과/이름/수강의지-->
+                정보통신공학과 / 김지후 / 열심히 배우겠습니다!
+            </p>
+        </section>
+        <footer>
+            &copy;Kim ji hoo / mok06234@gmail.com
+        </footer>
+    </body>
+</html>
