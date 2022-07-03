@@ -12,8 +12,8 @@ MOVIES ERD를 기반으로 MOVIES 데이터베이스를 설계합니다.<br>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a>&nbsp;
 <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/></a>&nbsp;
 <img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=flat-square&logo=Apache Tomcat&logoColor=black"/></a>&nbsp;
-
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/></a>&nbsp;
 
 ### Docker Images
-<li>tomcat server : mok06234/project_tomcat-server_image</li>
-<li>mysql : mok06234/project_mysql_image </li>
+<li>tomcat server : https://hub.docker.com/repository/docker/mok06234/project_tomcat-server_image </li>
+<li>mysql : https://hub.docker.com/repository/docker/mok06234/project_mysql_image </li>
